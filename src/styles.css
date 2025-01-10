@@ -30,14 +30,14 @@ body {
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
   border-radius: 10px;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 100px 0 100px;
   border-radius: 10px;
@@ -53,12 +53,28 @@ section {
   border-radius: 10px;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  border-radius: 10px;
+  padding: 0 50px;
+}
+
 .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   border-radius: 10px;
   margin: 0 auto;
+}
+
+.card {
+  background-color: ;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .why-ireland-box {
@@ -70,6 +86,12 @@ section {
 .why-ireland-image {
   max-width: 500px;
   aspect-ratio: 4/3;
+  border-radius: 10px;
+}
+
+.card-img {
+  max-width: 250px;
+  aspect-ratio: 3/2;
   border-radius: 10px;
 }
 
@@ -117,6 +139,36 @@ header h4 {
   font-size: 24px;
   line-height: 1.5;
   margin: 0;
+}
+
+.card h4 {
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card h5 {
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+}
+
+.btn {
+  color: #fcfbf6;
+  font-family: "Josefin Slab", serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  background-color: #2c2f36;
+  border-radius: 10px;
+  padding: 16px 32px;
 }
 
 header h5 {
@@ -195,7 +247,7 @@ header a {
     padding: 20px 20px 0 20px;
   }
 
-  .why-ireland-container h2 {
+  section-container h2 {
     font-size: 24px;
   }
 }
@@ -221,36 +273,56 @@ header a {
   font-size: 28px;
   letter-spacing: 2px;
   border-radius: 10px;
+  margin: 0 auto;
+  padding-bottom: 0;
 }
 
-.why-ireland-container {
+.cafes {
+  text-align: center;
+  padding: 60px 0 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.go-to-cafes {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.section-container {
   background-color: #fcfbf6;
   border-radius: 10px;
+  padding-bottom: 50px;
 }
 
-.why-ireland-container h2 {
+.section-container h2 {
   font-family: "IM Fell Great Primer", serif;
   font-weight: 600px;
   font-size: 48px;
   line-height: 1.5;
   margin: 0 0 50px 0;
   background-color: #fcfbf6;
+  border-radius: 10px;
 }
 
-.why-ireland-container h3 {
+.section-container h3 {
   font-family: "IM Fell Great Primer", serif;
   font-weight: 600px;
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
   background-color: #fcfbf6;
+  border-radius: 10px;
 }
 
-.why-ireland-container p{
+.section-container p{
   font-family: "Josefin Slab", serif;
   font-size: 20px;
   margin: 20px;
   background-color: #fcfbf6;
+  border-radius: 10px;
 }
 
 footer {
