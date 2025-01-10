@@ -118,6 +118,11 @@ section {
   border-radius: 10px;
 }
 
+.youtube-video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
 header {
   max-width: 1200px;
   margin: 0 auto;
@@ -281,6 +286,7 @@ header a {
     grid-gap: 10px;
     text-align: center;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -291,6 +297,28 @@ header a {
   .card-img {
     display: none;
   }
+
+  .why-ireland-box a {
+    display: none;
+  }
+
+  .grid-3-columns {
+    padding: 0;
+  }
+  
+  .grid-3-columns-first-narrow {
+    padding: 0;
+    grid-gap: 0;
+  }
+
+  .footer-container {
+    padding: 0;
+  }
+
+  footer {
+    padding: 0;
+  }
+
 }
 
 @media (max-width: 700px) {
