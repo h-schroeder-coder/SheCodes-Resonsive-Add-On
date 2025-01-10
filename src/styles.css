@@ -16,7 +16,7 @@
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 700
 
-.josefin-slab-<uniquifier > {
+.josefin-slab-regular {
   font-family: "Josefin Slab", serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -39,12 +39,38 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 100px 0 100px;
+  border-radius: 10px;
 }
 
 .grid {
   display: grid;
+}
+
+.grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 30px;
+  border-radius: 10px;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.why-ireland-box {
+  max-width: 80%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.why-ireland-image {
+  max-width: 500px;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
 }
 
 header {
@@ -165,6 +191,66 @@ header a {
     padding: 10px;
   }
 
+  section {
+    padding: 20px 20px 0 20px;
+  }
+
+  .why-ireland-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .why-ireland-image {
+    max-width: 250px;
+  }
+}
+
+.why-ireland {
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+}
+
+.why-ireland-container {
+  background-color: #fcfbf6;
+  border-radius: 10px;
+}
+
+.why-ireland-container h2 {
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 600px;
+  font-size: 48px;
+  line-height: 1.5;
+  margin: 0 0 50px 0;
+  background-color: #fcfbf6;
+}
+
+.why-ireland-container h3 {
+  font-family: "IM Fell Great Primer", serif;
+  font-weight: 600px;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  background-color: #fcfbf6;
+}
+
+.why-ireland-container p{
+  font-family: "Josefin Slab", serif;
+  font-size: 20px;
+  margin: 20px;
+  background-color: #fcfbf6;
 }
 
 footer {
